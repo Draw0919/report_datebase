@@ -1,0 +1,17 @@
+[
+  {
+    "title": "週報模板 (Weekly Report)",
+    "keywords": ["週報", "weekly", "report", "進度", "工作"],
+    "content": "## 本週進度\n\n* 項目 A：...\n* 項目 B：...\n\n## 下週計畫\n\n* ...\n\n## 遇到的問題\n\n* ..."
+  },
+  {
+    "title": "會議記錄模板 (Meeting Minutes)",
+    "keywords": ["會議", "meeting", "minutes", "記錄", "討論"],
+    "content": "### 會議資訊\n\n* **日期：** [填入日期]\n* **時間：** [填入時間]\n* **地點：** [填入地點]\n* **主席：** [填入姓名]\n* **記錄：** [填入姓名]\n\n### 出席人員\n\n* [姓名A], [姓名B], [姓名C]\n\n### 議程\n\n1.  [議程1]\n2.  [議程2]\n\n### 決議事項\n\n* [決議1]\n\n### 待辦事項 (Action Items)\n\n* [負責人]：[任務內容] (Due: [日期])"
+  },
+  {
+    "title": "專案啟動模板 (Project Kick-off)",
+    "keywords": ["專案", "project", "kickoff", "啟動", "新項目"],
+    "content": "## 專案名稱\n\n[專案名稱]\n\n## 專案目標 (Goal)\n\n* [主要目標]\n\n## 範圍 (Scope)\n\n* **包含 (In Scope):**\n    * ...\n* **不包含 (Out of Scope):**\n    * ...\n\n## 關鍵成員與職責\n\n* **PM:** [姓名]\n* **開發:** [姓名]\n* **設計:** [姓名]\n\n## 預期時程 (Timeline)\n\n* **[日期]:** [里程碑A]\n* **[日期]:** [里程碑B]"
+  }
+]

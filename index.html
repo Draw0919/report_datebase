@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的報告模板庫</title>
+    <title>我的報告模板庫 (Firebase)</title>
+    
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +18,7 @@
     </header>
 
     <main>
-        <details class="creator-section">
-            <summary>✨ 新增模板產生器</summary>
+        <details class="creator-section" open> <summary>✨ 新增模板</summary>
             <div class="creator-form">
                 <label for="newTitle">模板標題:</label>
                 <input type="text" id="newTitle" placeholder="例如：週報模板">
@@ -26,13 +29,8 @@
                 <label for="newContent">模板內容 (支援換行):</label>
                 <textarea id="newContent" rows="10" placeholder="## 本週進度..."></textarea>
                 
-                <button id="generateBtn">產生 JSON 程式碼</button>
-                
-                <div id="outputContainer" class="hidden">
-                    <p>請複製以下程式碼，並手動貼到您 GitHub 上的 `templates.json` 檔案中 (記得在最後一個模板後加上逗號 ,)：</p>
-                    <pre id="jsonOutput"></pre>
-                    <button id="copyJsonBtn">複製 JSON</button>
-                </div>
+                <button id="saveTemplateBtn">儲存新模板</button>
+                <span id="saveStatus" class="status-text"></span>
             </div>
         </details>
         <div class="search-container">
@@ -40,7 +38,8 @@
         </div>
         
         <div id="resultsContainer">
-            </div>
+            <p class="status-text">正在從 Firebase 載入模板...</p>
+        </div>
     </main>
 
     <script src="script.js"></script>
